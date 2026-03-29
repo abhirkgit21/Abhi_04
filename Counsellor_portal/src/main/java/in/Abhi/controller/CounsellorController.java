@@ -17,9 +17,13 @@ public class CounsellorController {
 
     @PostMapping("/register")
     public String register(@RequestBody Counseller c) {
+        System.out.println("Login Request");
         System.out.println("Incoming Data: " + c);
         return service.register(c);
+        
     }
+
+    
 
     @PostMapping("/login")
     public Counseller login(@RequestBody LoginRequest req) {
