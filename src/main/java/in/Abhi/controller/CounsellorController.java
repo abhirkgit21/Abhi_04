@@ -30,4 +30,9 @@ public class CounsellorController {
     public Map<String, Integer> dashboard(@PathVariable Integer id) {
         return service.getDashboard(id);
     }
+
+    @GetMapping("/name")
+    public String getName(){
+        return "Abhi";
+    }
 }
