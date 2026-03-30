@@ -35,4 +35,9 @@ public class CounsellorController {
     public String getName(){
         return "Abhi";
     }
+
+    @GetMapping("/api")
+    public String getApi(){
+        return "Atul";
+    }
 }
